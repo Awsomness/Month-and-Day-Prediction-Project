@@ -60,7 +60,24 @@ public class Main {
                 return 0;
         }
     }
-    public static int GregorianCalender(int month, int year,){
+    public static int GregorianCalender(int month, int year,int dayOfMonth){
+
+        if (month == 1 || month == 2) {
+            month = (month + 12);
+            year--;
+
+        }
+        int yearZeroBased;
+        yearZeroBased = (year / 100);
+        int zellerCongurenceThing;
+        zellerCongurenceThing = 13 * (month + 1);
+        int yearOfCentury;
+        yearOfCentury = (year % 100);
+
+
+        int dayOfWeek;
+        dayOfWeek = ((dayOfMonth + ((zellerCongurenceThing)/ 5) + yearOfCentury + (yearOfCentury / 4) + ((yearZeroBased) / 4) - (2 * (yearZeroBased))) % 7);
+        return dayOfWeek;
 
     }
 
