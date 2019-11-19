@@ -60,4 +60,26 @@ public class Main {
                 return 0;
         }
     }
+    public static int GregorianCalender(int month, int year,){
+
+    }
+
+    public static String monthPoem(int dayOfWeek) {
+
+        if (dayOfWeek == 1) {
+            return "Your birthday was on Monday \n" + "You have a fair face";
+        } else if (dayOfWeek == 2) {
+            return "Your birthday was on Tuesday \n" + "You are full of grace";
+        } else if (dayOfWeek == 3) {
+            return "Your birthday was on Wendsday \n" + "You are full of woe";
+        } else if (dayOfWeek == 4) {
+            return "Your birthday was on Thursday \n" + "You have far to go";
+        } else if (dayOfWeek == 5) {
+            return "Your birthday was on Friday \n" + "You are loving and giving";
+        } else if (dayOfWeek == 6) {
+            return "Your birthday was on Saturday \n" + "You work hard for a living";
+        } else {
+            return "Your birthday was on Sunday \n" + "You are fair and wise and good in every way.";
+        }
+    }
 }
